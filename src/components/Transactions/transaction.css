@@ -1,0 +1,51 @@
+.btn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.btn button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.table{
+    padding-top: 15px;
+}
+.table h2{
+    text-align: center;
+    padding: 15px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid gray;
+}
+thead{
+    background: gray;
+}
+
+th{
+    cursor: pointer;
+}
+
+th,td{
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.error{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+
+.del-btn{
+    color: white;
+    background-color: rgb(153, 9, 9);
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 4px 6px rgba(0, 0, 0, 0.2);
+}

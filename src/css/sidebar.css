@@ -1,0 +1,29 @@
+.sidebar{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: #0F0F0F;
+    padding: 10px;
+    border-radius: 10px;
+}
+.sidebar a{
+    color: #ccc;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.sidebar a:hover,.sidebar a.active{
+    display: block;
+    background: #31353A;
+    padding: 3px;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 300ms ease;
+}
+.sidebar li{
+    margin: 11px;
+    padding-bottom: 10px;
+    list-style: none;
+    text-align: center;
+}

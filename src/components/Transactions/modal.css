@@ -1,0 +1,27 @@
+dialog{
+    border: none !important;
+    border-radius: calc(5px *var(--ratio));
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 1.6rem;
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+dialog[open]{
+    display: flex;
+    justify-content: center;
+}
+dialog .inputs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100% ;
+}
+.inputs input,select,button{
+    padding: 10px;
+    font-size: 18px;
+}
