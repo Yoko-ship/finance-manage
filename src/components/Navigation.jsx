@@ -7,7 +7,6 @@ function Navigation({children}) {
         <ul>
             {children}
         </ul>
-
         <Outlet></Outlet>
     </div>
   )

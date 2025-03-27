@@ -1,6 +1,11 @@
 .chart{
-    display: flex;
-    justify-content: center;
-    width: 1700px;
-    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(2,4fr);
+}
+.pies{
+    width: 80%;
+}
+.pies h2{
+    text-align: center;
+    padding: 2rem;
 }

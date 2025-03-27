@@ -1,5 +1,5 @@
 import React from 'react'
-import "../css/sidebar.css"
+import "./sidebar.css"
 import { NavLink } from 'react-router-dom'
 function Sidebar() {
   return (
@@ -11,9 +11,6 @@ function Sidebar() {
                 </li>
                 <li>
                     <NavLink to="/transactions">Transactions</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/budget">Budget</NavLink>
                 </li>
                 <li>
                     <NavLink to="/settings">Settings</NavLink>
