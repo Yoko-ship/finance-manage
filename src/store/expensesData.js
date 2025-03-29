@@ -5,7 +5,8 @@ const expensesSlice = createSlice({
     name:"expenses",
     initialState:{
         expenses:[],
-        income: []
+        income: [],
+        user: null
     },
     reducers:{
         getExpenses(state,action){
@@ -13,9 +14,13 @@ const expensesSlice = createSlice({
         },
         getIncome(state,action){
             state.income = action.payload
+        },
+        authUser(state,action){
+            state.user = action.payload
         }
-    }
+    },
+    
 })
 
-export const {getExpenses,getIncome} = expensesSlice.actions
+export const {getExpenses,getIncome,authUser} = expensesSlice.actions
 export default expensesSlice.reducer

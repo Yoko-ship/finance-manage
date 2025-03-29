@@ -13,7 +13,7 @@ function Sidebar() {
                     <NavLink to="/transactions">Transactions</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/settings">Settings</NavLink>
+                    <NavLink to="/settings">Authentication</NavLink>
                 </li>
             </ul>
         </nav>

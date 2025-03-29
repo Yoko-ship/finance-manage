@@ -1,15 +1,16 @@
 import { initializeApp } from "firebase/app";
 import { child, get, getDatabase, push, ref, remove, set } from "firebase/database";
-import { firebase } from "firebase"
-import {firebaseui} from "fre"
+import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut} from "firebase/auth"
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDSgxKw-A3SDgv2ulY4qHi6djzgjwIOghs",
-  authDomain: "finance-management-94d24.firebaseapp.com",
-  projectId: "finance-management-94d24",
-  storageBucket: "finance-management-94d24.firebasestorage.app",
-  messagingSenderId: "397373835372",
-  appId: "1:397373835372:web:0f67d8abce277124413049",
-  databaseURL: "https://finance-management-94d24-default-rtdb.firebaseio.com/",
+    apiKey: "AIzaSyDSgxKw-A3SDgv2ulY4qHi6djzgjwIOghs",
+    authDomain: "finance-management-94d24.firebaseapp.com",
+    databaseURL: "https://finance-management-94d24-default-rtdb.firebaseio.com",
+    projectId: "finance-management-94d24",
+    storageBucket: "finance-management-94d24.firebasestorage.app",
+    messagingSenderId: "397373835372",
+    appId: "1:397373835372:web:0f67d8abce277124413049"
 };
 
 function getFullDate() {
@@ -83,3 +84,6 @@ export const deleteData = async(id,type) =>{
   const data = ref(db,`${type}/${id}`)
   await remove(data)
 }
+
+const auth = getAuth(app)
+export {app,auth,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut}
