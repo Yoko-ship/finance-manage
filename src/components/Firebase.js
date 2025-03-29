@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { child, get, getDatabase, push, ref, remove, set } from "firebase/database";
-
+import { firebase } from "firebase"
+import {firebaseui} from "fre"
 const firebaseConfig = {
   apiKey: "AIzaSyDSgxKw-A3SDgv2ulY4qHi6djzgjwIOghs",
   authDomain: "finance-management-94d24.firebaseapp.com",
